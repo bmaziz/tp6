@@ -1,0 +1,6 @@
+<h1>Liste des produits</h1>
+<ul>
+    <li *ngFor="let p of listproduit">
+        {{p.id}}--{{p.labelle}}--{{p.prix}} <a [routerLink]="['/produits',p.id]">Details</a>
+    </li>
+</ul>
